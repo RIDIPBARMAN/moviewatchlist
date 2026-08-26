@@ -1,0 +1,44 @@
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.feature-card {
+  background-color: var(--bg-surface);
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.feature-card:hover {
+  background-color: var(--bg-surface-hover);
+}
+
+.feature-icon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-text {
+  font-size: 0.85rem;
+  color: #cddff0;
+  line-height: 1.4;
+}
+
+.feature-text strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

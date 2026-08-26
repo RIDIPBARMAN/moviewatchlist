@@ -1,0 +1,43 @@
+.poster-grid-scroll {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 15px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-surface) var(--bg-dark);
+}
+
+.poster-grid-inner {
+  display: flex;
+  gap: 20px;
+}
+
+.grid-poster {
+  flex: 0 0 130px;
+  height: 195px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: border-color 0.2s;
+  cursor: pointer;
+}
+
+.grid-poster:hover {
+  border-color: var(--color-primary);
+}
+
+.grid-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.grid-subtitle {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
+
+.grid-subtitle strong {
+  color: #fff;
+}
